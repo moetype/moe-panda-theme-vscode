@@ -1,0 +1,23 @@
+{
+    "name": "moe-panda-theme",
+    "displayName": "Moe Panda Theme",
+    "description": "基于 Panda Theme 修改的自用 VSCode 主题配色",
+    "version": "0.2.0",
+    "publisher": "moetype",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "repository": "https://github.com/moetype/moe-panda-theme-vscode",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Panda Moe",
+                "uiTheme": "vs-dark",
+                "path": "./themes/panda_moe.json"
+            }
+        ]
+    }
+}
