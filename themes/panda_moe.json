@@ -158,9 +158,15 @@
 			}
 		},
 		{
-			"scope": "keyword.operator.logical, keyword.operator.comparison",
+			"scope": "keyword.operator.comparison",
 			"settings": {
 				"foreground": "#E6E6E6"
+			}
+		},
+		{
+			"scope": "keyword.operator.logical",
+			"settings": {
+				"foreground": "#FFCC95"
 			}
 		},
 		{
