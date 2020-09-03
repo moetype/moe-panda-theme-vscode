@@ -2,7 +2,7 @@
     "name": "moe-panda-theme",
     "displayName": "Moe Panda Theme",
     "description": "基于 Panda Theme 修改的自用 VSCode 主题配色",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "publisher": "moetype",
     "engines": {
         "vscode": "^1.20.0"
