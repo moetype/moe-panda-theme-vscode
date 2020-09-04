@@ -1,0 +1,29 @@
+name: Publish to VSCode marketplace
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'package.json'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'package.json'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Install vsce
+        run: |
+          npm install
+          npm install -g vsce
+      - name: Publish extension
+        run: vsce publish -p ${{ secrets.VSCODE_MARKETPLACE_TOKEN }}
